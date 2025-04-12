@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Signup</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background: linear-gradient(135deg, #9499fe, #b689fa); */
+      background-image: url('fourth.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .signup-card {
+      background: #7aa5ea; /* Solid light purple background */
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 480px;
+      color: white;
+      text-align: center;
+    }
+
+    .signup-card h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 10px;
+      background: rgba(200, 42, 42, 0.2);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .form-group input::placeholder {
+      color: #e0e0e0;
+    }
+
+    .submit-btn {
+      margin-top: 1.5rem;
+      padding: 0.7rem 2rem;
+      background-color: #fff;
+      color: #6b73ff;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #ffd700;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-card">
+    <h2>Signup to Start Quiz</h2>
+    <form action="quiz.php" method="post">
+      <div class="form-group">
+        <label for="username">Username*</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="questions">Number of Questions*</label>
+        <select id="questions" name="questions" required>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Choose Topic*</label>
+        <select id="topic" name="topic" required>
+          <option value="geography">Geography</option>
+          <option value="history">History</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Start Quiz</button>
+    </form>
+  </div>
+
+</body>
+</html>
