@@ -2,8 +2,9 @@
     // include 'partials/_qdbconnect.php';
 
     if($_SERVER["REQUEST_METHOD"]=="POST"){
-      session_start();
+      
       include 'partials/_qdbconnect.php';
+        session_start();
       $username="USER";
       $questions=5;
       $topic="History";
