@@ -1,204 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-    <title>Contact Us</title>
-    <style>
-        body {
-            background-color: rgb(215, 232, 250);
-            padding-left: 50px;
-            padding-top: 20px;
-            font-size: 35px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            min-height: 100vh;
-            font-family: "Sigmar", sans-serif;
-        }
-        h1 {
-            padding-top: 20px;
-            font-size: 46px;
-            color: black;
-        }
-        .short-line {
-            width: 800px;
-            margin-left: 0;
-            border: 1px solid black;
-        }
-        .main-content {
-            flex: 1;
-            margin-top: 100px;
-            max-width: 800px;
-        }
-        .menu {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #4aa8cd;
-            padding: 30px 0;
-            text-align: right;
-            z-index: 1000;
-            transition:  background-color  1s ease;
-        }
-        .menu ul {
-            display: flex;
-            justify-content: right;
-            padding: 0;
-            margin: 0;
-        }
-        .menu ul li {
-            list-style: none;
-            color: white;
-            padding: 10px 15px;
-            font-size: 25px;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-right: 25px;
-        }
-        .menu ul li a {
-            text-decoration: none;
-            color: white;
-        }
-        .menu ul :hover {
-            color: rgb(40, 53, 200);
-        }
-        .contact-form-container {
-            background-color: #f9f9f9;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 800px;
-            margin-top: 20px;
-        }
-        .contact-form-container h2 {
-            color: #333;
-            font-size: 1.5em;
-        }
-        .dax{
-            
-            transition: transform 0.3 ease;
-        }
-        .dax:hover{
-            color:purple;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            color: #555;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        .form-group textarea {
-            height: 100px;
-        }
-        .contact-form-container button {
-            background-color: #6c5ce7;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
-        }
-        .contact-form-container button:hover {
-            background-color: #4a3ac9;
-        }
-        .bottom-part {
-            background-color: rgb(169, 183, 238);
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1); 
-          
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(215, 232, 250);
+      font-family: "Sigmar", sans-serif;
+      padding-top: 120px;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
        
-        .right-image {
-    position: absolute;
-    right: 20px; 
-    top: 150px;
-    width: 400px; 
-}
+    .menu {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #4aa8cd;
+      padding: 20px 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Sigmar', sans-serif;
+    }
 
-.right-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; 
-}
+    .menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
 
-    </style>
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+
+    .menu ul li a:hover {
+      color: rgb(40, 53, 200);
+    }
+
+    .main-content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .short-line {
+      width: 100%;
+      max-width: 800px;
+      border: 1px solid black;
+      margin: 20px 0;
+    }
+
+    .dax:hover {
+      color: purple;
+    }
+
+    .contact-form-container {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .contact-form-container h2 {
+      color: #333;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group textarea {
+      height: 100px;
+    }
+
+    .contact-form-container button {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact-form-container button:hover {
+      background-color: #4a3ac9;
+    }
+
+    .right-image {
+      position: absolute;
+      right: 40px;
+      top: 180px;
+      width: 350px;
+    }
+
+    .right-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .right-image h1 {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    .bottom-part {
+      background-color: rgb(169, 183, 238);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+      .right-image {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        top: auto;
+        right: auto;
+      }
+
+      .right-image h1 {
+        font-size: 1.5rem;
+      }
+
+      .main-content {
+        padding: 15px;
+      }
+
+      .menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .menu ul li a {
+        font-size: 0.95rem;
+      }
+
+      .contact-form-container {
+        padding: 20px;
+      }
+
+      .right-image h1 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li><a href="exp.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
+  <div class="menu">
+    <ul>
+      <li><a href="exp.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Contact Us</h1>
+    <div class="dax">
+      <p>Fill out the form and our team will reach out to you within 1–2 days.</p>
+    </div>
+    <hr class="short-line" />
+
+    <h1>Email</h1>
+    <p>support@mywebsite.com</p>
+    <hr class="short-line" />
+
+    <h1>Social</h1>
+    <div style="margin-bottom: 20px;">
+      <a href="#"><img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png" alt="Facebook" width="50" /></a>
+      <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/017/339/624/original/linkedin-icon-free-png.png" alt="LinkedIn" width="50" /></a>
+      <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram" width="50" /></a>
+      <a href="#"><img src="https://imagepng.org/wp-content/uploads/2018/08/twitter-icone.png" alt="Twitter" width="50" /></a>
     </div>
 
-    <div class="main-content">
-        <h1>Contact Us</h1>
-        <div class="dax">
-        <p>Fill out the form and our team will reach out to you within 1-2 days.</p>
+    <div class="contact-form-container">
+      <h2>Get in Touch</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
         </div>
-        <hr class="short-line">
-        <h1>Email</h1>
-        <p>support@mywebsite.com</p>
-        <hr class="short-line">
-        <h1>Social</h1>
-        <div>
-            <a href="#"><img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png" alt="Facebook" width="50"></a>
-            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/017/339/624/original/linkedin-icon-free-png.png" alt="LinkedIn" width="50"></a>
-            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram" width="50"></a>
-            <a href="#"><img src="https://imagepng.org/wp-content/uploads/2018/08/twitter-icone.png" alt="Twitter" width="50"></a>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
         </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form-container">
-            <h2>Get in Touch</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
+  </div>
 
-    <div class="right-image">
-      
-        <img src="imgg.png" alt="Contact Image">
-        <h1>We would love to hear from you!</h1>
-    </div>
+  <div class="right-image">
+    <img src="imgg.png" alt="Contact Image" />
+    <h1>We would love to hear from you!</h1>
+  </div>
 
-    <div class="bottom-part">
-        <p>© 2025 My Awesome Website. All rights reserved.</p>
-    </div>
+  <div class="bottom-part">
+    <p>© 2025 My Awesome Website. All rights reserved.</p>
+  </div>
 </body>
 </html>
