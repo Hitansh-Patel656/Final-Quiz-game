@@ -1,180 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style>
-        body{
-            background-image: url(https://image.slidesdocs.com/responsive-images/background/light-blue-flash-plain-technology-business-powerpoint-background_807128c639__960_540.jpg);
-            padding-top: 80px;
-            font-size: 35px;
-            text-align: center;
-            background-repeat: no-repeat;
-            
-            background-size: cover;
-            color:rgb(222, 13, 249);
-            font-family: "Sigmar", sans-serif;
-            min-height: 100vh; 
-        }
-        .square1 {
-            width: 680px; 
-            height: 490px; 
-            background-color: rgb(247, 248, 249); 
-            margin-left: auto; 
-            margin-right: 200px; 
-            margin-top: 20px; 
-            border: 2px solid black; 
-            border-radius: 2px;
-            color:gold;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: left; 
-            line-height: 1.5;
-            border-radius: 19px;
-            transition: background-color 1s ease;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .square1 h2 {
-            font-size: larger;
-            text-align: center; 
-        }
-        .square1:hover{
-            background-color: rgb(135, 151, 132);
-        }
-       
-        .square2 {
-            width: 680px; 
-            height: 490px; 
-            background-color: rgb(247, 248, 249); 
-            margin-right: auto;
-            margin-left:170px;
-            margin-top: 150px; 
-            border: 2px solid black; 
-            border-radius: 2px;
-            padding-right: 0px;
-            padding: 20px;
-            color:rgb(110, 112, 247);
-            box-sizing: border-box;
-            text-align: left; 
-            border-radius: 19px;
-            transition:  background-color  1s ease;
-        }
-        .square2 h2 {
-            font-size: larger;
-            text-align: center;
-        }
-        .square2:hover{
-            background-color: rgb(237, 169, 227);
-        }
-        .square3 {
-            width: 680px;
-            height: 490px; 
-            background-color: rgb(247, 248, 249);
-            margin-left: auto; 
-            margin-right: 210px;
-            margin-top: 150px; 
-            border: 2px solid black; 
-            border-radius: 2px;
-            padding: 20px;
-            color:brown;
-            box-sizing: border-box;
-            text-align: left; 
-            border-radius: 19px;
-            transition:  background-color  1s ease;
-        }
-        .square3 h2 {
-            text-align: center; 
-        }
-        .square3:hover{
-            background-color: rgb(233, 226, 128);
-        }
-        .bottom-part {
-    width: 100%;
-    background-color: rgb(169, 183, 238);
-    text-align: center;
-    padding: 10px;
-    color:white;
-    margin-top: 30px; 
-        }
-.menu {
-  width: 100%;
-  max-width: 100vw; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition:  background-color  1s ease;
-  background: #4aa8cd;
-  padding: 30px 0;
-  text-align: right;
-  z-index: 1000;
-  overflow-x: auto; 
-}
+    body {
+      background-image: url('https://image.slidesdocs.com/responsive-images/background/light-blue-flash-plain-technology-business-powerpoint-background_807128c639__960_540.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Sigmar', sans-serif;
+      color: rgb(222, 13, 249);
+      padding-top: 120px;
+      min-height: 100vh;
+      font-size: 1.3rem;
+      text-align: center;
+    }
 
-.menu ul {
-  display: flex;
-  justify-content: right;
-  padding: 0;
-  margin: 0;
-}
+    .menu {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #4aa8cd;
+      padding: 20px 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Sigmar', sans-serif;
+    }
 
-.menu ul li {
-  list-style: none;
-  color: white;
-  padding: 10px 15px; 
-  font-size: 25px; 
-  font-weight: bold;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  margin-right: 25px; 
-}
+    .menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
 
-.menu ul li a {
-    text-decoration: none;
-    color: white;
-}
-.menu ul :hover {
-  color: rgb(40, 53, 200); 
-}
-    </style>
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+
+    .menu ul li a:hover {
+      color: rgb(40, 53, 200);
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin: 20px 10px;
+      color: #fff;
+      color:rgb(222, 13, 249);
+    }
+
+    .square1, .square2, .square3 {
+      width: 680px;
+      max-width: 90%;
+      height: auto;
+      background-color: rgb(247, 248, 249);
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+      border: 2px solid black;
+      border-radius: 19px;
+      margin-top: 60px;
+      transition: background-color 1s ease;
+      cursor:pointer;
+    }
+
+    .square1 {
+      margin-left: auto;
+      margin-right: 200px;
+      color: gold;
+    }
+
+    .square2 {
+      margin-left: 170px;
+      margin-right: auto;
+      color: rgb(110, 112, 247);
+    }
+
+    .square3 {
+      margin-left: auto;
+      margin-right: 210px;
+      color: brown;
+    }
+
+    .square1:hover {
+      background-color: rgb(135, 151, 132);
+    }
+
+    .square2:hover {
+      background-color: rgb(237, 169, 227);
+    }
+
+    .square3:hover {
+      background-color: rgb(233, 226, 128);
+    }
+
+    .square1 h2, .square2 h2, .square3 h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .extra-text {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 0 20px;
+      color:rgb(222, 13, 249);
+    }
+
+    .bottom-part {
+      width: 100%;
+      background-color: rgb(169, 183, 238);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .square1, .square2, .square3 {
+        margin: 20px auto !important;
+        text-align: center;
+      }
+
+      .square1 h2, .square2 h2, .square3 h2 {
+        font-size: 1.4rem;
+      }
+
+      body {
+        font-size: 1.1rem;
+      }
+
+      .menu ul li a {
+        font-size: 1rem;
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .menu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .extra-text {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li><a href="exp.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-    </div>
-    <h1>"The beautiful thing about learning is that nobody can take it away from you." </h1>
-    <div class="square1">
-        <h2>DID YOU KNOW??</h2>
-        <p>A Turtle can live for 400 to 700 years.</p>
-        <p>Hamming Bird can fly backward Though small, the hummingbird is fearless and free</p>
-    </div>
-   
-    <div class="square2">
-        <h2>CAN YOU IMAGINE??</h2>
-        <p>Most People fall asleep in 7 minutes..</p>
-        <p>Your brain keeps growing until you're about 25 years old!!</p>
-    </div>
-    <div class="square3">
-        <h2>HERE'S ANOTHER ONE!</h2>
-        <p>An Octopus has three hearts.</p>
-        <p>Bananas are berries, but Strawberries aren't!</p>
-    </div>
-    <div class="body1">
-        <h2></h2>
-    </div>
-    <h2>It's Made with ❤! We're really passionate about quizzes and making QuizWhiz the bestit can be.</h2>
-    <div class="bottom-part">
-        <p>&copy; 2025 My Awesome Website. All rights reserved.</p>
-    </div>
+  <div class="menu">
+    <ul>
+      <li><a href="exp.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <h1>"The beautiful thing about learning is that nobody can take it away from you."</h1>
+
+  <div class="square1">
+    <h2>DID YOU KNOW??</h2>
+    <p>A Turtle can live for 400 to 700 years.</p>
+    <p>Hummingbirds can fly backward — though small, they are fearless and free!</p>
+  </div>
+
+  <div class="square2">
+    <h2>CAN YOU IMAGINE??</h2>
+    <p>Most people fall asleep in 7 minutes.</p>
+    <p>Your brain keeps growing until you're about 25 years old!</p>
+  </div>
+
+  <div class="square3">
+    <h2>HERE'S ANOTHER ONE!</h2>
+    <p>An octopus has three hearts.</p>
+    <p>Bananas are berries — but strawberries aren't!</p>
+  </div>
+
+  <div class="extra-text">
+    It's made with ❤! We're really passionate about quizzes and making QuizWhiz the best it can be.
+  </div>
+
+  <div class="bottom-part">
+    <p>&copy; 2025 My Awesome Website. All rights reserved.</p>
+  </div>
 </body>
 </html>
